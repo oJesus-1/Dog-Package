@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
-      xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.application.dogpackage.controller.SceneController">
-
-   <children>
-      <VBox prefHeight="400.0" prefWidth="100.0">
-         <children>
-            <StackPane prefHeight="79.0" prefWidth="100.0" />
-            <Button fx:id="stackPane" mnemonicParsing="false" onAction="#abrirClientes" prefHeight="40.0" prefWidth="100.0" text="Menu" />
-            <Button mnemonicParsing="false" onAction="#abrirCadastro" prefHeight="40.0" prefWidth="100.0" text="Cadastro" />
-            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Button" />
-            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Button" />
-            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Button" />
-            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Button" />
-            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Button" />
-            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Button" />
-         </children>
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.application.dogpackage.controller.InicialController"
+      spacing="20">
+   <Label text="Resumo das encomendas"/>
+   <HBox spacing="20">
+      <VBox  prefWidth="150" prefHeight="150" minWidth="150" minHeight="150">
+         <Label fx:id="lblEntregues" text="0"/>
+         <Label text="Entregues"/>
       </VBox>
-      <StackPane fx:id="areaConteudo" layoutX="101.0" layoutY="-1.0" prefHeight="400.0" prefWidth="499.0" />
-   </children>
-</Pane>
+      <VBox prefWidth="150" prefHeight="150" minWidth="150" minHeight="150">
+         <Label fx:id="lblPendentes" text="0"/>
+         <Label text="Pendentes"/>
+      </VBox>
+      <VBox prefWidth="150" prefHeight="150" minWidth="150" minHeight="150">
+         <Label fx:id="lblTotal" text="0"/>
+         <Label text="Total"/>
+      </VBox>
+   </HBox>
+</VBox>

@@ -1,4 +1,4 @@
-package com.application.dogpackage.controller;
+package com.application.dogpackage;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -13,14 +13,10 @@ public class Main extends Application {
     }
     @Override
     public void start(Stage stage) throws Exception {
-
-
-        Parent root = FXMLLoader.load(getClass().getResource("/com/application/dogpackage/tela-inicial.fxml"));//novo nó
-        Scene scene = new Scene(root); //nova cena
-
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/application/dogpackage/tela-principal.fxml"));
+        Scene scene = new Scene(loader.load()); //nova cena
         stage.setTitle("DogPackage");
         stage.setScene(scene);//seta a scene no stage
-
         stage.show(); //mostra o stage
     }
 }
