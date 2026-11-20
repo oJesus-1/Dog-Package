@@ -13,13 +13,13 @@ public class SceneController {
 
         @FXML
         private void abrirClientes() throws IOException {
-            Node tela = FXMLLoader.load(getClass().getResource("tela-principal.fxml"));
+            Node tela = FXMLLoader.load(getClass().getResource("/com/application/dogpackage/tela-principal.fxml"));
             areaConteudo.getChildren().setAll(tela);
         }
 
         @FXML
         private void abrirCadastro() throws IOException {
-            Node tela = FXMLLoader.load(getClass().getResource("tela-cadastro.fxml"));
+            Node tela = FXMLLoader.load(getClass().getResource("/com/application/dogpackage/tela-cadastro.fxml"));
             areaConteudo.getChildren().setAll(tela);
         }
     }
