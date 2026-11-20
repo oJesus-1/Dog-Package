@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
-
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26"
-            xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.application.dogpackage.controller.SceneController">
-
-   <children>
-      <Label layoutX="25.0" layoutY="14.0" text="Bem vindo -Nome-">
-         <font>
-            <Font size="36.0" />
-         </font>
-      </Label>
-   </children>
-</AnchorPane>
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.application.dogpackage.controller.PrincipalController"
+            prefWidth="900" prefHeight="600">
+   <left>
+      <VBox spacing="10" prefWidth="180">
+         <Label text="Dog-Package"/>
+         <Button fx:id="btnInicio" text="Início" maxWidth="Infinity" onAction="#inicio" />
+         <Button fx:id="btnCadastro" text="Encomendas" maxWidth="Infinity" onAction="#cadastro"/>
+      </VBox>
+   </left>
+   <center>
+      <StackPane fx:id="areaConteudo"/>
+   </center>
+</BorderPane>
