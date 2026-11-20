@@ -15,10 +15,10 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception {
 
 
-        Parent root = FXMLLoader.load(getClass().getResource("tela-inicial.fxml"));//novo nó
+        Parent root = FXMLLoader.load(getClass().getResource("/com/application/dogpackage/tela-inicial.fxml"));//novo nó
         Scene scene = new Scene(root); //nova cena
 
-        stage.setTitle("DogPack");
+        stage.setTitle("DogPackage");
         stage.setScene(scene);//seta a scene no stage
 
         stage.show(); //mostra o stage
